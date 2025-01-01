@@ -8,7 +8,10 @@ test_src = [
 
 ]
 
+# Build dependency
 simdjson = dependency('simdjson', required: true)
+
+# Test dependency
 gtest = dependency('gtest', required: false)
 
 executable('SynthLauncher', [src, 'src/main.cc'], include_directories: 'include', dependencies: [simdjson])
