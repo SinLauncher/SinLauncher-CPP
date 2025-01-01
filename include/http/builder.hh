@@ -6,8 +6,7 @@
 #define USER_AGENT "SynthLauncher/1.0.0"
 #define HTTP_ENDLINE "\r\n"
 
-class Header {
-public:
+struct Header {
   std::string key;
   std::string value;
 
