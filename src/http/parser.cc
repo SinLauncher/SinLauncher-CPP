@@ -1,7 +1,7 @@
 #include "include/http/parser.hh"
 
-Response parseResponse(std::string &res) {
-  Response response;
+HttpResponse parseResponse(std::string &res) {
+  HttpResponse response;
   std::vector<std::string> method;
   std::string ss;
 

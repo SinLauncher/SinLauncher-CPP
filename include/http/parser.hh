@@ -4,11 +4,11 @@
 #include <string>
 #include <vector>
 
-struct Response {
+struct HttpResponse {
   std::string httpVersion;
   std::string httpCode;
   std::vector<Header> header;
   std::string body;
 };
 
-Response parseResponse(std::string &res);
+HttpResponse parseResponse(std::string &res);
